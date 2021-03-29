@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "239941928347",
+    "project_id": "robotemipro",
+    "storage_bucket": "robotemipro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239941928347:android:094581a1340f5dace3cd3e",
+        "android_client_info": {
+          "package_name": "com.robo.roboapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239941928347-0n0o0bci1eicq0c89npfvpc6jhhtpj5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxR1XhrrrEFJVcbhhvaCDxh8D3PgcXlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239941928347-0n0o0bci1eicq0c89npfvpc6jhhtpj5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

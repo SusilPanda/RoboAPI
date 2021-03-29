@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RoboAPI</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="enter_location">Please enter a location name</string>
+    <string name="save_location">Save Location</string>
+    <string name="get_location">Fetch Location</string>
+    <string name="get_all_location">Fetch All Location</string>
+    <string name="go_to_location">Please enter location to go to</string>
+    <string name="go_to">Go to</string>
+    <string name="cage_temp">25 Degree Celsius</string>
+    <string name="cabinet_temp">24 Degree Celsius</string>
+
+    <!-- temi -->
+    <string name="enter_speech">Please enter something to say</string>
+    <string name="speak">Speak</string>
+    <string name="follow_me">Follow Me</string>
+    <string name="saved_locations">Saved Locations</string>
+    <string name="show_contacts">Show Contacts</string>
+    <string name="stop_follow">Stop Follow</string>
+    <string name="skidjoy">skidjoy</string>
+    <string name="tiltangle">tiltAngle</string>
+    <string name="turnby">turnBy</string>
+    <string name="battery_info">Battery Info</string>
+    <string name="stop_movement">Stop Movement</string>
+    <string name="call_owner">Call Owner</string>
+    <string name="publish_to_activities">Publish To Activities</string>
+</resources>
