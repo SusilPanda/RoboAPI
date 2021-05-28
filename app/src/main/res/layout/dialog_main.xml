@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/meetingNumber"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Meeting Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey" />
+
+
+
+    <EditText
+        android:id="@+id/meetingPassword"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Meeting Password"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey" />
+
+    <Button
+        android:id="@+id/joinMeeting"
+        style="@style/ButtonCommon"
+        android:onClick="joinMeeting"
+        android:text="@string/join_meeting" />
+
+</LinearLayout>
