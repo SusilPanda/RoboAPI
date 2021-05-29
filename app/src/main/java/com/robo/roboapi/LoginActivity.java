@@ -58,6 +58,7 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -460,7 +461,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
     }
 
-    public void navigateTheRobo(Robot robot, String command) {
+    public void navigateTheRobo(Robot robot, String command, Date lastUpdatedDate) {
         switch(command) {
             case "UP":
                 Log.d("Navigation UP ", String.valueOf(command));
@@ -512,13 +513,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 if (dataSnapshot.getValue() != null) {
                     // String key = String.valueOf(dataSnapshot.getValue());
                     TemiNavigation mUser = dataSnapshot.getValue(TemiNavigation.class);
-                    Log.d("Navigation move ", String.valueOf(mUser.getDirection()));
+                    Log.d("Navigation move ", String.valueOf(mUser.getDirection())+mUser.getLastUpdatedDate());
 
                     // Call Robot goto method
                     Position pos = new Position(1, 0, 0, 1);
                     //robot.goToPosition(pos);
                     //robot.skidJoy(1,0);
-                    navigateTheRobo(robot, mUser.getDirection());
+                    navigateTheRobo(robot, mUser.getDirection(), mUser.getLastUpdatedDate());
 
                 } else {
                     Log.i("OnChanged Targt child: ", "NULL");
@@ -560,7 +561,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mDatabase.child("Zoom").child(targetId).setValue(zm);
     }
     public void writeDefaultNavigationDetails(String navId, String direction) {
-        TemiNavigation tNav = new TemiNavigation(direction);
+        TemiNavigation tNav = new TemiNavigation(direction, new Date());
 
         mDatabase.child("TemiNavigation").child(navId).setValue(tNav);
     }
